@@ -24,20 +24,22 @@
 
 - Temperature sensor connected to the ADC pin.
 - UART TTL to USB module is used in order to send the serial data from the AVR to the PC.
-e.g. CP2102 Chip USB to TTL (Serial) Converter.![webp net-resizeimage](https://user-images.githubusercontent.com/19417067/42128476-d8b6fc7e-7cac-11e8-896c-87ed7799bea5.jpg)
+e.g. CP2102 Chip USB to TTL (Serial) Converter.
+
+![webp net-resizeimage](https://user-images.githubusercontent.com/19417067/42128476-d8b6fc7e-7cac-11e8-896c-87ed7799bea5.jpg)
 
 
 
 
 ## Assumptions
-- The clock of your Microcontroller should be set to 1 Mhz for the timers to operate properly.
-- The temperature sensor used is assumed to be linear and it's sensetivity is changed according to it's maximum temperature.
+- The clock of your Microcontroller should be set to **1 Mhz** for the timers to operate properly.
+- The temperature sensor used is assumed to be **linear** and it's sensetivity is changed according to it's maximum temperature.
 
 e.g. if the sensor has maximum temperature of 100 degree celsius, then it's senstivity is Max temp/Max voltage= 100/5= 20 degree/volt.
 The user shall write the max temp in user_input.h and according to it the senstivity is calculated and used to find the correct temperature.
 
 - The UART data frame is set to 8 data bits, 1 stops bit and no parity bit is used.
-- The bounce time is set to 60 ms as the worst bouncing time in all push buttons can't exceed 60 ms.
+- The bounce time is set to **60 ms** as the worst bouncing time in all push buttons can't exceed 60 ms.
 - When choosing the push button PIN in user_input.h make sure to choose a pin used as external interrupt in your microncontroller.
 
 e.g. the default pin is user_input.h is Port D pin 2 which is Interrupt 0 for ATmega16A.
@@ -47,4 +49,4 @@ e.g. the default pin is user_input.h is Port D pin 2 which is Interrupt 0 for AT
 - Care should be taken when setting the baud rate in user_input.h according to this table to avoid error frames.
 ![screen shot 2011-09-27 at 9 40 45 pm 1](https://user-images.githubusercontent.com/19417067/42127834-c5da75ac-7c9f-11e8-8bd1-dc94871b7474.png)
 
-The default baud rate in user_input.h is set to 4800 for 0.2% error.
+The default baud rate in user_input.h is set to **4800** for 0.2% error.
