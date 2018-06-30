@@ -20,11 +20,14 @@
 - Atmega16A
 - LED and 330 resistor connected in series to the output pin.
 - push button connected with a pull down resistor to the input pin.
-![pulldown](https://user-images.githubusercontent.com/19417067/42128218-95cfd364-7ca6-11e8-9725-ca4cb8b2c2af.jpg)
+![rsz_pulldown](https://user-images.githubusercontent.com/19417067/42128477-db8c942c-7cac-11e8-9bf4-845a814b4837.jpg)
 
 - Temperature sensor connected to the ADC pin.
 - UART TTL to USB module is used in order to send the serial data from the AVR to the PC.
-e.g. CP2102 Chip USB to TTL (Serial) Converter.
+e.g. CP2102 Chip USB to TTL (Serial) Converter.![webp net-resizeimage](https://user-images.githubusercontent.com/19417067/42128476-d8b6fc7e-7cac-11e8-896c-87ed7799bea5.jpg)
+
+
+
 
 ## Assumptions
 - The clock of your Microcontroller should be set to 1 Mhz for the timers to operate properly.
