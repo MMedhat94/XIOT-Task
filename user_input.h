@@ -9,6 +9,7 @@
 #ifndef USER_INPUT_H_
 #define USER_INPUT_H_
 
+#define USART_BAUDRATE (4800)
 
 #define DDR_LED			DDRA	// Choose from DDRA, DDRB, DDRC or DDRD
 #define PORT_LED		PORTA	//Choose from PORTA, PORTB, PORTC or PORTD
