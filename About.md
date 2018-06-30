@@ -36,5 +36,16 @@ depending on timer module that overflows every 3 seconds.
 ## Gained experience:
 Using timer trigerred ADC.
 
-##Previous experience:
-Using AVR and ARM bases microcontrollers for complex projects.
+## Previous experience:
+Using AVR and C language for embedded systems projects for 3 years.
+
+Examples for my projects:
+- **Virtual Reality Car**: A car controlled using a PS2 controller connected to AVR using SPI and commands are sent to
+the car. the car has a 360 degree camera mounted on it.A mobile phone is put into the Virtual Reality kit on the head of
+the user and the video recorded by the camera is streamed on the phone's screen.The controller signals are sent to the
+AVR, using SPI, then sent to the car using WiFi module ESP-8266 which has STM32F407 microcontroller to be able to
+fully control the car.
+
+- **Camera Pan/Tilt Stabilizer**: A system to stabilize camera to keep tracking a certain position without disturbance.
+Two servos in the pan and tilt kit are controlled using STM32F407microcontroller (ARM based processor) which reads
+gyroscope sensor readings from IMU6050and magnetometer sensor readings from GY-271 using I2C protocol.
