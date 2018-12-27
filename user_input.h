@@ -5,7 +5,7 @@
  *  Author: Mohamed Medhat
  */ 
 
-
+/* dummy comment */
 #ifndef USER_INPUT_H_
 #define USER_INPUT_H_
 
