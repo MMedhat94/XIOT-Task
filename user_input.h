@@ -1,12 +1,9 @@
 /*
  * user_input.h
- *merge test github
- * merge test branch github
- * Created: 28-Jun-18 10:38:36 PM
+// merged comflict   * Created: 28-Jun-18 10:38:36 PM
  *  Author: Mohamed Medhat
  */ 
-//bla bla github
-/* dummy comment */
+// fixed one/* dummy comment */
 #ifndef USER_INPUT_H_
 #define USER_INPUT_H_
 
